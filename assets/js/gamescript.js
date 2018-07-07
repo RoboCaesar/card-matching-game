@@ -114,6 +114,7 @@ $("#carddisplay").on("click", ".cardimage",function() {
     var thisIndex = $(".cardimage").index(this);
     if (flipped[thisIndex] == false) {
         flipped[thisIndex] = true;
+        //flipCard(thisIndex, cardsArray[thisIndex]);
         $(this).animate({
             width: "0",
         }, 200, function() {
